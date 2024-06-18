@@ -1,5 +1,5 @@
 # DSA-100-Days
-Commitment towards by establishing a track to solve major DSA questions of every topic related to placement drives.
+Committed to developing a path to solve significant DSA questions related to placement drives for every topic.
 
 # PLATFORMS FOR CODING
 <a href="https://www.leetcode.com/suryansh21ujjwal" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="suryansh21ujjwal" height="30" width="40" /></a> LEETCODE
