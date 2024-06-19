@@ -1,0 +1,17 @@
+import java.io.*;
+public class reversedarray{
+    public static void main(int[] arr) {
+        int[] reversedArr =new int[arr.length];
+        for (int i=0; i<arr.length; i++){
+            reversedArr[i]= arr[arr.length-i-1];
+        }
+        System.out.println("Reversed Array:");
+        for (int i: reversedArr){
+            System.out.println(i+" ");
+        }
+    }
+    public static void main(String[] args) {
+        int[] originalArr ={898,893,874,855};
+        main(originalArr);
+    }
+}
