@@ -1,3 +1,7 @@
+Array Reverse using an extra array(Non - in place)
+Des: - Create new array of same size as the original array.
+- Copy elements from the original array to the new array in reversed order.
+
 import java.io.*;
 public class reversedarray{
     public static void main(int[] arr) {
@@ -15,3 +19,33 @@ public class reversedarray{
         main(originalArr);
     }
 }
+
+Array Reverse using a loop(in place)
+Des: - Iterate using two pointers i.e.., Start an End.
+- Swap elements at the start and end pointers and move start point towards end and towards start until they meet or cross each other.
+
+public class reversedarrayinplace{
+    static void reversedarray(int arr[], int start , int end){
+        int temp;
+        while(start < end){
+            temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+    }
+    static void printarray(int arr[], int size){
+        for (int i = 0; i < size; i++)
+            System.out.print(arr[i] + " ");
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3, 4, 5};
+        printarray(arr, arr.length); 
+        reversedarray(arr, 0, arr.length - 1); 
+        System.out.println("Reversed array:");
+        printarray(arr, arr.length);  
+    }
+}
+
