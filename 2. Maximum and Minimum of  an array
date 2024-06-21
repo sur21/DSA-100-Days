@@ -31,3 +31,5 @@ public class minmax {
             System.out.println("maximum value"+ setMaxi(A, N));
         }
     }
+
+There are also many options to solve min and max of an array by linear search ,sorting techniques ,by compairing in the pairs and tournamnet method.
