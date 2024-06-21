@@ -1,1 +1,33 @@
+Minimum and Maximum of any array using Min. no of comparisons.
 
+In this we generally find the minimum by initialising the Min_Value and maximum by Max_Value and call by setting the setmini and setmaxi before.
+
+Code mentioned below:
+
+import java.util.Arrays;
+public class minmax {
+    public static int setMini(int A[], int N){
+        int mini =Integer.MAX_VALUE;
+        for(int i=0; i<N; i++){
+            if(A[i]<mini){
+                mini=A[i];
+            }
+        }
+        return mini;
+    }
+    public static int setMaxi(int A[], int N){
+        int maxi =Integer.MIN_VALUE;
+        for(int i=0; i<N;i++){
+            if(A[i]>maxi){
+                maxi=A[i];
+            }
+        }
+        return maxi;
+        }
+        public static void main(String[] args) {
+            int A[]={1000,2342,5666,44,3,1};
+            int N= A.length;
+            System.out.println("minimum value"+ setMini(A, N));
+            System.out.println("maximum value"+ setMaxi(A, N));
+        }
+    }
