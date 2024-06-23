@@ -1,0 +1,52 @@
+Given an array A[] consisting of only 0s, 1s, and 2s. The task is to sort the array, i.e., put all 0s first, then all 1s and all 2s in last.
+
+Code:
+import java.io.*;
+class sort {
+    static void sort012(int a[], int arr_size)
+    {
+        int lo = 0;
+        int hi = arr_size - 1;
+        int mid = 0, temp = 0;
+        while (mid <= hi) {
+            switch (a[mid]) {
+                // If the element is 0
+            case 0: {
+                temp = a[lo];
+                a[lo] = a[mid];
+                a[mid] = temp;
+                lo++;
+                mid++;
+                break;
+            }
+            case 1:
+                mid++;
+                break;
+                 case 2: {
+                temp = a[mid];
+                a[mid] = a[hi];
+                a[hi] = temp;
+                hi--;
+                break;
+            }
+            }
+        }
+    }
+
+    static void printArray(int arr[], int arr_size)
+    {
+        int i;
+        for (i = 0; i < arr_size; i++)
+            System.out.print(arr[i] + " ");
+        System.out.println("");
+    }
+    public static void main(String[] args)
+    {
+        int arr[] = { 0, 1, 1, 0, 1, 2, 1, 2, 0, 0, 0, 1 };
+        int arr_size = arr.length;
+        sort012(arr, arr_size);
+        printArray(arr, arr_size);
+    }
+}
+
+This problem is done by using better approach that requires only time complexity O(n) and space complexity O(1).
