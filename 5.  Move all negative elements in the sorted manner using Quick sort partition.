@@ -1,0 +1,33 @@
+The main aim to rearrange the elements in negative to positive approach like -3,-2,-1,0,1,2,3.
+
+Code of the metioned problem:
+
+import java.io.*;
+
+public class negativerearrange{
+    static void negativerearrange(int arr[], int n){
+        int j=0 , temp;
+        for(int i=0; i<n; i++){
+            if(arr[i]<0){
+                if(i!=j){
+                    temp = arr[i];
+                    arr[i]= arr[j];
+                    arr[j]= temp;
+                }
+                j++;
+            }
+        }
+
+    }
+    static void printArray(int arr[], int n){
+        for (int i=0; i<n; i++){
+            System.out.println(arr[i]+ "");
+        }
+    }
+public static void main(String[] args) {
+    int arr[]={-1,40,-11,22,3,-2};
+    int n=arr.length;
+    negativerearrange(arr, n);
+    printArray(arr, n);
+}
+}
