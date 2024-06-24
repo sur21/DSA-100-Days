@@ -31,3 +31,5 @@ public static void main(String[] args) {
     printArray(arr, n);
 }
 }
+
+We can do this same problem using other methods like Naive approach, two pointers approach ,dutch national flag alogorithm and two pass approach.
